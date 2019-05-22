@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>Search Gallery</title>
+  <meta charset = "UTF-8" />
+  <link rel = "stylesheet" type = "text/css" href = "stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,700&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+  <h1 class="title">Search All Galleries</h1>
+  <p1 class="desc">To search for multiple things, add a '+' in between each new person, object, etc</p1>
+  <br>
+  <p1 class="desc">Example:</p1>
+  <b>Amber Nelson + June + 2005 + 18 Ridgeview Dr</b>
+  
+  <div id=searchBoxDiv>
+    <input type="text" id="searchBox" value=""/>
+    <button id="searchButton" onclick="searchWords()">Search!</button>
+  </div>
+
+  <h2 class="title">Keywords To Search For</h2>
+  <p1 class="desc">You can select existing keywords to add to your search</p1>
+  
+
+  <div id="keywords">
+    <button class="keyword">Amber Nelson</button> <p1>|</p1>
+    <button class="keyword">Ashley Nelson</button> <p1>|</p1>
+    <button class="keyword">18 Ridgeview Dr</button>
+  </div>
+  
+</body>
+
+<script>
+  function searchWords() {
+    alert("boo");
+    var user_input = document.getElementById("searchBox").value;
+    var words = str.split(" ");
+    var searchString = "https://ambers-scans.smugmug.com/keyword/";
+    for (var i=0; i < words.length; i++) {
+    	if (words[i] == "+") {
+      	searchString += ";";
+      } else {
+      	searchString += words[i] + "%20";
+      }
+    }
+    
+    // open searched page
+		window.location.href = searchString;
+  }
+</script>
+</html>
