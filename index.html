@@ -8,7 +8,8 @@
 	
 </head>
 <body>
-  <h1 class="title">Search All Galleries</h1>
+  <button id="backButton" onclick="window.location.href = 'https://ambers-scans.smugmug.com/';">Go Back To Homepage</button>
+  <h1 class="title" id="firstTitle">Search All Galleries</h1>
   <p1 class="desc">To search for multiple things, add a '+' in between each new person, object, etc</p1>
   <br>
   <p1 class="desc">Example:</p1>
@@ -33,9 +34,8 @@
 
 <script>
   function searchWords() {
-    alert("boo");
     var user_input = document.getElementById("searchBox").value;
-    var words = str.split(" ");
+    var words = user_input.split(" ");
     var searchString = "https://ambers-scans.smugmug.com/keyword/";
     for (var i=0; i < words.length; i++) {
     	if (words[i] == "+") {
@@ -46,7 +46,7 @@
     }
     
     // open searched page
-		window.location.href = searchString;
+		window.open(searchString);
   }
 </script>
 </html>

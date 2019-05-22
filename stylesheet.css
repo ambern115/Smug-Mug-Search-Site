@@ -1,9 +1,40 @@
 body {
-    font-family: 'Roboto';
-    text-align: center;
-    background-color: #1c1d1f;
-    color: #ffffff;
-    font-weight: 100;
+  font-family: 'Roboto';
+  text-align: center;
+  background-color: #1c1d1f;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+#backButton {
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: #6eb800;
+  padding: 3px;
+  padding-left: 5px; padding-right: 5px;
+  color: #000000;
+  border: solid;
+  border-color: #6eb800;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+#backButton:hover {
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: #307200;
+  padding: 3px;
+  padding-left: 5px; padding-right: 5px;
+  color: #ffffff;
+  border: solid;
+  border-color: #ffffff;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+
+#firstTitle {
+  margin-top: 120px;
 }
 
 #searchBoxDiv {
@@ -37,11 +68,14 @@ body {
   height: 40px;
   font-family: 'Roboto';
   font-size: 22px;
-  background-color: #477700;
+  background-color: #307200;
   color: #ffffff;
   border: solid;
-  border-color: #477700;
+  border-color: #307200;
   border-radius: 3px;
+  border-color: #ffffff;
+  border-radius: 3px;
+  border-width: 1px;
 }
 
 .title {
